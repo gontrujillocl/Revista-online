@@ -1,0 +1,52 @@
+body {
+  font-family: $lato;
+  font-size: $medium;
+  color: $smoky-black;
+}
+
+a {
+  text-decoration: none;
+  color: $smoky-black;
+  font-weight: $bold;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.news {
+  grid-area: news;
+}
+
+.about {
+  grid-area: about;
+}
+
+.tags {
+  grid-area: tags;
+}
+
+.highlight {
+  grid-area: highlight;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: auto 20vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'nav nav'
+      'news about'
+      'news tags'
+      'news highlight'
+      'footer footer';
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}

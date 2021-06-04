@@ -1,0 +1,52 @@
+.tags {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .tags {
+    display: block;
+    padding: 1rem 2rem 1rem 0;
+
+    & h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    &__pills {
+      display: flex;
+      flex-wrap: wrap;
+
+      & span {
+        font-size: $small;
+        text-align: center;
+        border: 1px solid $isabelline;
+        border-radius: 18px;
+        padding: 0.3rem 0.8rem;
+        margin-right: 0.3rem;
+        margin-top: 0.3rem;
+
+        &.viajes {
+          background: $coral;
+        }
+
+        &.noticias {
+          background: $steel-blue;
+        }
+
+        &.comida {
+          background: $yellowflu;
+        }
+
+        &.deporte {
+          background: lightgreen;
+        }
+
+        &.espectaculos {
+          background: $fluor;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}

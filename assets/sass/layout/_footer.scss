@@ -1,0 +1,59 @@
+.footer {
+  text-align: center;
+
+  &__newsletter {
+    background: $isabelline;
+    padding: 3rem 1.5rem;
+
+    & p {
+      padding: 1rem 0;
+    }
+  }
+
+  &__copy {
+    padding: 1rem;
+
+    & p {
+      font-size: $small;
+    }
+  }
+
+  &__input-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__input-field {
+    width: 100%;
+    padding: 0.5rem;
+    outline: none;
+  }
+
+  &__btn {
+    padding: 0.7rem 1rem;
+    background: $coral;
+    color: white;
+    text-align: center;
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer__input-field {
+    width: 50%;
+  }
+
+  .footer__btn {
+    padding: 0.7rem 1rem;
+    background: $coral;
+    color: white;
+    text-align: center;
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .footer__input-field {
+    width: 25%;
+  }
+}
